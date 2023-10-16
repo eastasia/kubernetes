@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: volume-test-deployment
+  labels:
+    app: volume-test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: volume-test
+  template:
+    metadata:
+      labels:
+        app: volume-test
+    spec:
+      containers:
+      - name: volume-test
+        image: nginx:stable-alpine
+        imagePullPolicy: IfNotPresent
+        volumeMounts:
+        - name: volv
+          mountPath: /data
+        ports:
+        - containerPort: 80
+      volumes:
+      - name: volv
+        persistentVolumeClaim:
+          claimName: local-path-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: volume-test
+spec:
+  #type: NodePort
+  ports:
+  - port: 8080
+    targetPort: 80
+  # - port: 8080
+  #   targetPort: 80
+  #   nodePort: 30000   
+  selector:
+    app: volume-test
+
