@@ -1,3 +1,4 @@
+
 kind create cluster --name monitoring --image kindest/node:v1.26.0 --config kind.yaml
 
 kubectl get nodes
