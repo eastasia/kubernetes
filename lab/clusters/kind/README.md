@@ -1,3 +1,4 @@
+
 minikube addons list
 
 #enable kubia service to be accessible outside the cluster
@@ -19,7 +20,6 @@ kubectl config set-context kind-data-stack --cluster=kind-data-stack
 #switch to pre-defined contexts 
 kubectl config use-context kind-testing
 kubectl config use-context kind-data-stack
-
 
 #Deploy the ingress controller in Kind cluster
 https://dustinspecker.com/posts/test-ingress-in-kind/
