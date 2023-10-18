@@ -1,7 +1,7 @@
 
 minikube addons list
 
-#enable kubia service to be accessible outside the cluster
+#enable kubia service to be accessible outside the cluster.
 minikube service kubia-http
 
 #enable ingress
