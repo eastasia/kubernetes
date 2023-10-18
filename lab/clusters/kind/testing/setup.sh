@@ -7,4 +7,4 @@ kubectl create -f provisioner.yaml
 
 kubectl create -f pvc.yaml
 
-kubecdtl 
+kubectl get pods
