@@ -1,5 +1,5 @@
 
-minikube addons list.
+minikube addons list
 
 #enable kubia service to be accessible outside the cluster.
 minikube service kubia-http
