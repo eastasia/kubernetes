@@ -25,3 +25,5 @@ kubectl config use-context kind-data-stack
 https://dustinspecker.com/posts/test-ingress-in-kind/
 
 https://kind.sigs.k8s.io/docs/user/ingress/
+
+.
