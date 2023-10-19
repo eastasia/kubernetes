@@ -1,7 +1,7 @@
 
 Commands:
 
-kind create cluster --name monitoring --image kindest/node:v1.26.0 --config kind.yaml
+kind create cluster --name kind-services-stack --image kindest/node:v1.26.0 --config kind.yaml
 
 kubectl get nodes
 
