@@ -10,6 +10,9 @@ kubectl create deployment hello-go --image=hello-go
 
 kind create cluster --name data-stack --image kindest/node:v1.26.0 --config kind.yaml
 
+//CentOS
+kindest/node:v1.21.1
+
 kubectl get sc
 kind delete cluster --name=kind-data-stack
 kind get clusters
