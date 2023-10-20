@@ -29,4 +29,6 @@ https://dustinspecker.com/posts/test-ingress-in-kind/
 
 https://kind.sigs.k8s.io/docs/user/ingress/
 
- kind create cluster --config /home/allen/.vscode-server/extensions/sandipchitale.vscode-kubernetes-dashboard-1.0.10/kubernetes/kind/kind-cluster-3-nodes.yml
+//Working in CentOS
+kind create cluster --config /home/allen/.vscode-server/extensions/sandipchitale.vscode-kubernetes-dashboard-1.0.10/kubernetes/kind/kind-cluster-3-nodes.yml
+kind create cluster --config kind-cluster-3-nodes.yml
